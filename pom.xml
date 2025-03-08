@@ -12,7 +12,7 @@
 	<artifactId>jwt-auth-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>jwt-auth-server</name>
-	<description>Demo project for Spring Boot</description>
+	<description>JWT authentication server built with Spring Boot.</description>
 	<url/>
 	<licenses>
 		<license/>

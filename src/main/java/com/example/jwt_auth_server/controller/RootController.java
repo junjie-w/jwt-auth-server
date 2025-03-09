@@ -21,10 +21,10 @@ public class RootController {
     response.put("version", "1.0.0");
     
     Map<String, String> endpoints = new LinkedHashMap<>();
-    endpoints.put("Check service health", "/api/health");
-    endpoints.put("Register a new user", "/api/auth/register");
-    endpoints.put("Authenticate and issue JWT", "/api/auth/login");
-    endpoints.put("Get authenticated user info", "/api/users/me");
+    endpoints.put("GET /api/health", "Check service health");
+    endpoints.put("POST /api/auth/register", "Register a new user");
+    endpoints.put("POST /api/auth/login", "Authenticate and issue JWT");
+    endpoints.put("GET /api/users/me", "Get authenticated user info");
     
     response.put("endpoints", endpoints);
     return response;

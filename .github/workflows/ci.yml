@@ -53,7 +53,7 @@ jobs:
     - name: Extract version from pom.xml
       id: get_version
       run: |
-        VERSION=$(grep -A 1 "<version>" pom.xml | grep -v "<version>" | head -1 | sed 's/[[:space:]]*<version>\(.*\)<\/version>.*/\1/')
+        VERSION=$(grep "<version>" pom.xml | head -1 | sed 's/.*<version>\(.*\)<\/version>.*/\1/')
         echo "VERSION=${VERSION}" >> $GITHUB_ENV
         
     - name: Build and push Docker image

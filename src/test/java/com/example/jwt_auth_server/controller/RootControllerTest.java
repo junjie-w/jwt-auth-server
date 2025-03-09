@@ -27,9 +27,9 @@ public class RootControllerTest {
             .andExpect(jsonPath("$.application").value(applicationName))
             .andExpect(jsonPath("$.description").value("JWT Authentication Server"))
             .andExpect(jsonPath("$.version").value("1.0.0"))
-            .andExpect(jsonPath("$.endpoints['Check service health']").value("/api/health"))
-            .andExpect(jsonPath("$.endpoints['Register a new user']").value("/api/auth/register"))
-            .andExpect(jsonPath("$.endpoints['Authenticate and issue JWT']").value("/api/auth/login"))
-            .andExpect(jsonPath("$.endpoints['Get authenticated user info']").value("/api/users/me"));
+            .andExpect(jsonPath("$.endpoints['GET /api/health']").value("Check service health"))
+            .andExpect(jsonPath("$.endpoints['POST /api/auth/register']").value("Register a new user"))
+            .andExpect(jsonPath("$.endpoints['POST /api/auth/login']").value("Authenticate and issue JWT"))
+            .andExpect(jsonPath("$.endpoints['GET /api/users/me']").value("Get authenticated user info"));
   }
 }

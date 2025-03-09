@@ -35,7 +35,7 @@ docker-pull-remote:
 	docker pull junjiewu0/jwt-auth-server || docker pull --platform linux/amd64 junjiewu0/jwt-auth-server
 
 docker-run-remote:
-	docker run -p 8080:8080 junjiewu0/jwt-auth-server || docker run --platform linux/amd64 -p 8000:8000 junjiewu0/jwt-auth-server
+	docker run -p 8080:8080 junjiewu0/jwt-auth-server || docker run --platform linux/amd64 -p 8080:8080 junjiewu0/jwt-auth-server
 
 try-api:
 	./scripts/try_api.sh
